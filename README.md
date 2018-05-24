@@ -1,32 +1,18 @@
 # clj-aws-s3-localstack-demo
 
-FIXME: description
+A trivial AWS S3 bucket access demo
 
-## Installation
+## Access a real AWS S3 bucket in the cloud
 
-Download from http://example.com/FIXME.
+Prerequisites:
+* a real AWS S3 bucket in the cloud, obviously
+* [AWS credentials](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html) for accessing the bucket
 
-## Usage
-
-FIXME: explanation
-
-    $ java -jar clj-aws-s3-localstack-demo-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+For example, given a bucket called `my-bucket` in AWS region `eu-west-1`:
+```sh
+$ lein run eu-west-1 https://s3.eu-west-1.amazonaws.com my-bucket
+Success! Bucket my-bucket exists and is accessible in region eu-west-1
+```
 
 ## License
 
