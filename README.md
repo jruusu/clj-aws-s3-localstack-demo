@@ -2,6 +2,8 @@
 
 A trivial AWS S3 bucket access demo
 
+You'll need [Leiningen](https://leiningen.org/) to run this.
+
 ## Access a real AWS S3 bucket in the cloud
 
 Prerequisites:
