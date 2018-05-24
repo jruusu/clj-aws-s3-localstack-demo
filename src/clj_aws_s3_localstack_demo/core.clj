@@ -1,9 +1,10 @@
 (ns clj-aws-s3-localstack-demo.core
-  (:gen-class)
   (:require [clojure.string :as string])
-  (:import [com.amazonaws.client.builder AwsClientBuilder$EndpointConfiguration]
-           [com.amazonaws.services.s3 AmazonS3Client AmazonS3ClientBuilder]
-           [com.amazonaws.services.s3.model HeadBucketRequest]))
+  (:import (com.amazonaws.client.builder AwsClientBuilder$EndpointConfiguration)
+           (com.amazonaws.services.s3 AmazonS3Client
+                                      AmazonS3ClientBuilder)
+           (com.amazonaws.services.s3.model HeadBucketRequest))
+  (:gen-class))
 
 (defn -main
   "Checks if the bucket can be accessed"
